@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindflix - Web App per visualizzare film e serie TV</title>
+  <meta name="description" content="Sviluppo codice web app simile a Netflix per scopo didattico">
+  <meta name="author" content="MIND Academy">
+  <meta name="copyright" content="Copyright 2022 MIND Academy">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JavaScript Bundle with Popper -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2 ps-5 fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Mindflix Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tv Shows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Originals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recently Added</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My List</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav mb-2 mb-lg-0 d-flex me-2">
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-search"></i></a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-bell"></i></a></li>
+            <li class="nav-item"><a href="login.html" class="nav-link">Account</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Navbar -->
+  </header>
+
+  <main>
+    <!-- Video Background -->
+    <div id="video-background">
+      <iframe src="https://www.youtube-nocookie.com/embed/Io_d_woiis8" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <div class="title-description" class="ps-5">
+        <img src="img/the-batman.png" alt="The Batman Movie Logo">
+        <h1>The Batman</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae laborum veritatis ad.</p>
+      </div>
+    </div>
+
+    
+  
+
+
+    <!-- Main Container -->
+    <section class="main-container">
+      <div class="container-fluid">
+        <h2 id="popular">Proposti da MINDFLIX</h2>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/13-reasons-why.PNG" alt="Popolari" class="img-fluid"></div>
+            <div class="swiper-slide"><img src="img/agent-shield.PNG" alt="Popolari" class="img-fluid"></div>
+            <div class="swiper-slide"><img src="img/club-de-cuervos.PNG" alt="Popolari" class="img-fluid"></div>
+            <div class="swiper-slide"><img src="img/bright.PNG" alt="Popolari" class="img-fluid"></div>
+            <div class="swiper-slide"><img src="img/arrested-development.PNG" alt="Popolari" class="img-fluid"></div>
+            <div class="swiper-slide"><img src="img/black-lighting.PNG" alt="Popolari" class="img-fluid"></div>
+            <div class="swiper-slide"><img src="img/the-vietnam-war.PNG" alt="Titoli del momento" class="img-fluid"></div>
+            <div class="swiper-slide"><img src="img/guardian-of-the-galaxy-vol2.PNG" alt="Popolari" class="img-fluid"></div>
+            <div class="swiper-slide"><img src="img/the-staircase.PNG" alt="Recenti" class="img-fluid"></div>
+            <div class="swiper-slide"><img src="img/riverdale.PNG" alt="TV Show" class="img-fluid"></div>
+          </div>
+          <div class="bullet">
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        
+        
+        <!-- end Swiper -->
+
+        <h2 id="popular">I più popolari</h2>
+        <div class="row">
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/13-reasons-why.PNG" alt="Popolari" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/agent-shield.PNG" alt="Popolari" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/bad-boys.PNG" alt="Popolari" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/black-lighting.PNG" alt="Popolari" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/brain-on-fire.PNG" alt="Popolari" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/bright.PNG" alt="Popolari" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/casa-di-carta.PNG" alt="Popolari" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/club-de-cuervos.PNG" alt="Popolari" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/cooking-on-high.PNG" alt="Popolari" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/greys-anatomy.PNG" alt="Popolari" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/guardian-of-the-galaxy-vol2.PNG" alt="Popolari" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/arrested-development.PNG" alt="Popolari" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <h2 id="momento">I titoli del momento</h2>
+        <div class="row">
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/the-vietnam-war.PNG" alt="Titoli del momento" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/the-week-of.PNG" alt="Titoli del momento" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/undercover-boss.PNG" alt="Titoli del momento" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/wanted.PNG" alt="Titoli del momento" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/wynonna.PNG" alt="Titoli del momento" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/guardian-of-the-galaxy-vol2.PNG" alt="Popolari" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <h2 id="tvShows">Tv Horror e fantascienza</h2>
+        <div class="row">
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/new-girl.PNG" alt="TV Show" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/bad-boys.PNG" alt="TV Show" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/jessica-jones.PNG" alt="TV Show" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/national-treasure.PNG" alt="TV Show" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/shooter.PNG" alt="TV Show" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/guardian-of-the-galaxy-vol2.PNG" alt="TV Show" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/penny-dreadful.PNG" alt="TV Show" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/riverdale.PNG" alt="TV Show" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/the-night-shift.PNG" alt="TV Show" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/the-flash.PNG" alt="TV Show" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/jessica-jones.PNG" alt="TV Show" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/13-reasons-why.PNG" alt="TV Show" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <h2 id="originals">MINDflix Originals</h2>
+        <div class="row">
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/legends-of-tomorrow.PNG" alt="Originals" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/black-lighting.PNG" alt="Originals" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/the-week-of.PNG" alt="Originals" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/the-ranch.PNG" alt="Originals" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/greys-anatomy.PNG" alt="Originals" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/bad-boys.PNG" alt="Originals" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <h2 id="recentlyAdded">Aggiunti di recente</h2>
+        <div class="row">
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/cooking-on-high.PNG" alt="Recenti" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/the-kissing-boot.PNG" alt="Recenti" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/undercover-boss.PNG" alt="Recenti" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/arrested-development.PNG" alt="Recenti" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/the-staircase.PNG" alt="Recenti" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-3 col-xl-2">
+            <a href="#">
+              <img src="img/club-de-cuervos.PNG" alt="Recenti" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- MAIN CONTAINER -->
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container-fluid">
+      <div class="rov">
+        <div class="col-lg-12">
+          <div class="logos">
+            <a href=""><i class="fab fa-facebook-square fa-2x logo"></i></a>
+            <a href=""><i class="fab fa-instagram fa-2x logo"></i></a>
+            <a href=""><i class="fab fa-twitter fa-2x logo"></i></a>
+            <a href=""><i class="fab fa-youtube fa-2x logo"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3">
+          <ul>
+            <li><a href="">Audio and Subtitles</a></li>
+            <li><a href="">Media Center</a></li>
+            <li><a href="">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <ul>
+            <li><a href="">Audio Description</a></li>
+            <li><a href="">Investor Relations</a></li>
+            <li><a href="">Legal Notices</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <ul>
+            <li><a href="">Help Center</a></li>
+            <li><a href="">Jobs</a></li>
+            <li><a href="">Corporate Information</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <ul>
+            <li><a href="">Gift Cards</a></li>
+            <li><a href="">Terms of Use</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="container">
+        <p>© 1997-2022 MINDflix - Esercizio creato a scopo didattico da <a href="https://creativemind.academy" target="_blank">MIND Academy</a></p>
+      </div>
+    </div>
+
+
+  </footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
